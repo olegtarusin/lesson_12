@@ -1,0 +1,437 @@
+.knight__container {
+   background: url('../img/castel.jpg') 0px 0px / cover no-repeat;
+   height: 800px;
+   position: relative;
+}
+
+.knight {
+   position: absolute;
+   top: 300px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.knight__left,
+.knight__right {
+
+   position: relative;
+
+}
+
+.knight__right>div,
+.knight__left>div {
+   position: absolute;
+   right: 50%;
+}
+
+.knight__right {
+   transform: rotateY(180deg);
+}
+
+
+.knight__head {
+   top: 0px;
+   z-index: 300;
+}
+
+.head-knight {
+   perspective: 400px;
+}
+
+.head-knight__top {
+   width: 25px;
+   height: 30px;
+   border-radius: 20px 0px 0px 0px;
+   position: relative;
+   border-top: 1px solid #000;
+   background-color: #742a2a;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.head-knight__top::before {
+   content: "";
+   width: 15px;
+   height: 20px;
+   background-color: #742a2a;
+   box-shadow: inset 5px 0px 10px #000;
+   position: absolute;
+   top: 100%;
+   right: 0;
+}
+
+.head-knight__eye {
+   width: 20px;
+   height: 15px;
+   border-radius: 5px 0px 15px 15px;
+   background-color: black;
+   transform: skew(-30deg, 20deg);
+   position: absolute;
+   left: 2px;
+   bottom: 0px;
+   ;
+}
+
+.head-knight__side {
+   width: 10px;
+   height: 40px;
+   border: 1px solid #000;
+   border-radius: 0px 10px 0px 50%;
+   position: absolute;
+   bottom: 0px;
+   left: -10px;
+   transform: skewY(45deg);
+   background-color: #742a2a;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.head-knight__bottom {
+   width: 25px;
+
+
+}
+
+.head-knight__hole {
+   position: relative;
+   width: 25px;
+   height: 50px;
+   border: 1px solid #000;
+   border-right: none;
+   border-radius: 5px 0px 0px 10px / 5px 0px 0px 50px;
+   transform: skewY(30deg);
+   z-index: 300;
+   background-color: #861414;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.head-knight__hole>div:first-child {
+   position: absolute;
+   top: 5px;
+   right: 14px;
+   transform: skewX(10deg);
+}
+
+.head-knight__hole>div:nth-child(2) {
+   position: absolute;
+   top: 5px;
+   right: 6px;
+   transform: skewX(5deg);
+}
+
+.head-knight__hole>div:last-child {
+   position: absolute;
+   top: 5px;
+   right: -2px;
+}
+
+.head-knight__hole>div {
+   width: 4px;
+   height: 30px;
+   border-radius: 2px;
+   background-color: black;
+}
+
+.head-knight__neck {
+   width: 20px;
+   height: 20px;
+   border: 1px solid #000;
+   transform-origin: 0px 0px;
+   transform: rotate(45deg);
+   position: relative;
+   top: -7px;
+   left: 5px;
+   z-index: 1;
+   background-color: #cc2d2d;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.neckfeel {
+   width: 20px;
+   height: 27px;
+   border-bottom: 1px solid #000;
+   transform-origin: 0px 0px;
+   transform: rotate(-45deg);
+   background-color: #cc2d2d;
+   box-shadow: inset 0px 5px 10px #000;
+}
+
+.knight-body {
+   top: 86px;
+}
+
+
+.knight-body__shoulder {
+   position: absolute;
+   left: -20px;
+   top: -10px;
+   z-index: 300;
+}
+
+.shoulder {
+   width: 50px;
+   height: 35px;
+   border-radius: 40px 10px 10px 10px;
+   transform: rotate(-20deg);
+   perspective: 400px;
+   transform-style: preserve-3d;
+   background-color: #bf2626;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+[class*="__throm"] {
+   width: 5px;
+   height: 10px;
+   transform-origin: 0px bottom;
+   transform: rotateX(-45deg) translateZ(-1px) skewY(70deg);
+   background-color: #d80f0f;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.shoulder__throm {
+   position: relative;
+   top: -6px;
+   left: 40px;
+}
+
+.knight-body__top {
+   border-radius: 10px 10px 10px 20px;
+   width: 65px;
+   height: 60px;
+   position: relative;
+   z-index: 100;
+   background-color: #a13f3f;
+   box-shadow: inset 5px 0px 10px #000;
+
+}
+
+.knight-body__bottom {
+   perspective: 500px;
+   perspective-origin: bottom right;
+   background-color: #00000000;
+   position: relative;
+   z-index: 1;
+}
+
+.knight-body__armor-bottom {
+   width: 50px;
+   height: 90px;
+   transform-origin: bottom right;
+   transform: rotateX(-40deg);
+   position: absolute;
+   right: 0px;
+   top: -26px;
+   background-color: #692c2c;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.knight-body__hole>div {
+   height: 80px;
+   width: 6px;
+   background-color: #000;
+   border-radius: 3px;
+   position: absolute;
+   top: 0px;
+
+
+}
+
+.knight-body__hole div:first-child {
+   right: 8px;
+}
+
+.knight-body__hole div:last-child {
+   left: 16px;
+   transform: skewX(5deg);
+}
+
+
+.knight__belt {
+   width: 50px;
+   height: 10px;
+   background-color: #bf2626;
+   top: 210px;
+   z-index: 100;
+   perspective-origin: top right;
+   perspective: 1000px;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+
+.belt__side {
+   position: absolute;
+   width: 20px;
+   height: 100px;
+   top: 3px;
+   left: 0px;
+   background-color: #801b1b;
+   transform-origin: 0px 0px;
+   transform: rotate(15deg);
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.belt__within {
+   position: absolute;
+   width: 20px;
+   height: 100px;
+   top: 8px;
+   right: 0px;
+   background-color: #801b1b;
+   transform-origin: 0px 0px;
+   transform: rotateX(-45deg);
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.leg {
+   width: 50px;
+   height: 190px;
+   background-color: #701a1a;
+   top: 220px;
+   z-index: 1;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.leg__above {
+   width: 50px;
+   height: 190px;
+   background: url('../img/scales.jpg') 0px 0px / 100% 100%;
+   transform-origin: 0px 0px;
+   transform: rotate(15deg);
+   border-radius: 0px 0px 5px 10px;
+   position: relative;
+   z-index: 50;
+
+}
+
+.leg__sub {
+   background-color: #880c0ccc;
+   height: 100%;
+   border-radius: 0px 0px 5px 10px;
+   box-shadow: inset 15px 0px 15px #000;
+}
+
+.leg__boots {
+   position: relative;
+   z-index: 1;
+}
+
+.boots__top {
+   width: 25px;
+   height: 25px;
+   background-color: #481010;
+   border-bottom: 2px solid #000;
+   box-shadow: inset -5px 0px 10px #000;
+
+}
+
+.boots__bottom {
+   width: 25px;
+   height: 25px;
+   background-color: #481010;
+   border-radius: 90% 0px 0px 0px;
+   position: relative;
+   border-bottom: 2px solid #000;
+   top: -25px;
+   right: 25px;
+}
+
+.hand {
+   position: absolute;
+   left: -30px;
+   transform: rotate(45deg);
+}
+
+.hand__arms {
+   width: 30px;
+   height: 100px;
+   background-color: #481010;
+   border-radius: 20px 0px 0px 0px;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.hand__gloves {
+   width: 40px;
+   height: 60px;
+   position: relative;
+   left: -5px;
+   perspective: 400px;
+}
+
+.hand__armor {
+   position: relative;
+   z-index: 100;
+   height: 220px;
+   background-color: #b90707;
+   transform-origin: 0px 0px;
+   transform: rotateX(-70deg);
+   box-shadow: inset 5px 0px 10px #000;
+
+}
+
+.hand__throm {
+   transform: translateX(-100%) skewY(45deg);
+   margin-bottom: 10px;
+}
+
+.hand__fingers {
+   font-size: 0px;
+   position: absolute;
+   bottom: -8px;
+   left: 8px;
+   z-index: 70;
+}
+
+.hand__fingers>div {
+   display: inline-block;
+   height: 18px;
+   width: 6px;
+   background-color: #742a2a;
+   border-radius: 0px 0px 50% 50%;
+   border: 1px solid #000;
+}
+
+.axe {
+   position: absolute;
+   bottom: -5px;
+   left: -110px;
+   transform: translateY(-50%);
+   z-index: 50;
+}
+
+.handle {
+   width: 150px;
+   height: 10px;
+   background-color: #742a2a;
+   border-radius: 5px;
+   perspective-origin: top left;
+   perspective: 400px;
+   box-shadow: inset 5px 0px 10px #000;
+}
+
+.blade__t {
+   position: absolute;
+   top: -50px;
+   left: 20px;
+   width: 50px;
+   height: 50px;
+   background-color: #88def6;
+   transform-origin: bottom left;
+   transform: rotateX(60deg) scale(0.95);
+   border: 1px solid #000;
+   border-bottom: none;
+   border-radius: 0px 0px 20px 10px;
+   box-shadow: inset 10px 10px 20px #06f75a, inset -10px -10px 20px #06f50a, -10px 10px 20px #06f75a, 10px -10px 20px #06f50a;
+}
+
+.blade__b {
+   position: absolute;
+   top: 10px;
+   left: 20px;
+   width: 50px;
+   height: 100px;
+   background-color: #88def6;
+   transform-origin: top left;
+   transform: rotateX(60deg);
+   border: 1px solid #000;
+   border-top: none;
+   border-radius: 10px 20px 0px 0px;
+   box-shadow: inset 10px 10px 20px #06f75a, inset -10px -10px 20px #06f50a, -10px 10px 20px #06f75a, 10px -10px 20px #06f50a;
+}
